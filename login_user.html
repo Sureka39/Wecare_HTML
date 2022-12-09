@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wecare</title>
+    <style>
+        .l_align {
+            text-align: right;
+        }
+        .align {
+            text-align: center;
+        }
+        #footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="images/logo.PNG" width="50">
+    <div class="l_align"> <a href="">Contact Us</a></div>
+    <hr>
+    <br><br>
+    <img src="images/user.jpg" width="50">
+    <h1>Login As User</h1>
+    <form action="user_home.html" method="get">
+        <input type="text" placeholder="UI-0001" disabled required><br><br>
+        <input type="password" placeholder="Enter Password" pattern="[A-Za-z0-9]{5,10}" required><br><br>
+        <button type="submit">Login</button>
+    </form>
+    
+    <footer id="footer">
+        <hr>
+        <b>
+            <p class="align">Copyright &copy; 2020 WeCare. All Rights Reserved</p>
+        </b>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WeCare</title>
+    <style>
+        .l_align {
+            text-align: right;
+        }
+
+        #footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .align {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="images/logo.PNG" width="50">
+    <div class="l_align"> <a href="user_profile.html">View Profile</a>|
+        <a href="myappointments.html">My Appointments</a>|
+        <a href="">View Coaches</a>|
+        <a href="feedback.html">Feedback</a>|
+        <a href="contact_us.html">Contact Us</a>|
+        <a href="cancel.html">Logout</a>
+    </div>
+    <hr>
+    <form action="schedule.html" method="post">
+    <table>
+        <caption><b>Coach Details</b></caption><br>
+        <tr>
+            <th>Coach Profile Image</th>
+            <th>Coach Name</th>
+            <th>Coach Id</th>
+            <th>Phone Number</th>
+            <th>Specialty</th>
+            <th>Book Appoinment</th>
+        </tr>
+        <tr>
+            <td><img src="images/female.png" width="100" height="100"></td>
+            <td>Rose</td>
+            <td>CI-0001</td>
+            <td>+44 1234567890</td>
+            <td>Confidence Issues</td>
+            <td><button type="submit">Book</button></td>
+        </tr>
+
+        <tr>
+            <td><img src="images/male.png" width="100" height="100"></td>
+            <td>John</td>
+            <td>CI-0002</td>
+            <td>+61 1234567891</td>
+            <td>Depression Issues</td>
+            <td><button type="submit">Book</button></td>
+        </tr>
+
+        <tr>
+            <td><img src="images/female.png"width="100" height="100"></td>
+            <td>Mary</td>
+            <td>CI-0003</td>
+            <td>+852 1234567892</td>
+            <td>Depression Issues</td>
+            <td><button type="submit">Book</button></td>
+        </tr>
+    </table>
+</form>
+    <footer id="footer">
+        <hr>
+        <b>
+            <p class="align">Copyright &copy; 2020 WeCare. All Rights Reserved</p>
+        </b>
+    </footer>
+</body>
+
+</html>

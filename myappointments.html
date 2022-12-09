@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WeCare</title>
+    <style>
+        .l_align {
+            text-align: right;
+        }
+
+        #footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .align {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/logo.PNG" width="50">
+    <div class="l_align"> <a href="user_profile.html">View Profile</a>|
+        <a href="myappointments.html">My Appointments</a>|
+        <a href="">View Coaches</a>|
+        <a href="feedback.html">Feedback</a>|
+        <a href="contact_us.html">Contact Us</a>|
+        <a href="cancel.html">Logout</a>
+    </div>
+    <hr>
+<br><br>
+<form action="reschedule.html" method="get">
+<h2>My Appointments</h2>
+<b>Booking Id:</b> BI-0001<br><br>
+<b>Coach Id:</b> CI-0001<br><br>
+<b>Coach Name:</b> Rose<br><br>
+<b>User Id:</b> UI-0001<br><br>
+<b>User Name:</b> David<br><br>
+<b>Date:</b> Wed Mar 16 2022<br><br>
+<b>Slot:</b> 9 AM to 10 AM<br><br>
+<button type="submit">Reschedule</button><br><br>
+<button type="submit" formaction="cancel.html">Cancel</button><br><br>
+<button type="submit" formaction="user_profile.html">Go Back</button>
+</form>
+    <footer id="footer">
+        <hr>
+        <b>
+            <p class="align">Copyright &copy; 2020 WeCare. All Rights Reserved</p>
+        </b>
+    </footer>
+</body>
+</html>

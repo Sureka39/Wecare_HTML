@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WeCare</title>
+    <style>
+        .l_align {
+            text-align: right;
+        }
+
+        #footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .align {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="images/logo.PNG" width="50">
+    <div class="l_align"> <a href="user_profile.html">View Profile</a>|
+        <a href="myappointments.html">My Appointments</a>|
+        <a href="">View Coaches</a>|
+        <a href="">Feedback</a>|
+        <a href="">Contact Us</a>|
+        <a href="">Logout</a>
+    </div>
+    <hr>
+    <br><br><br><br>
+    <img src="images/note_pen.png" width="40">
+<h2>Proceed with your Appoinment</h2>
+<form action="reschedule_success.html" method="get">
+    <label for="date"><b>Date of Appoinment</b></label><br>
+    <input type="date" required><br><br>
+
+    
+    <b>Preferred Slot</b><br>
+      <input type="radio" id="slot1" name="slot" value="9-10" required>
+      <label for="poor">9 AM to 10 AM</label>
+      <input type="radio" id="slot2" name="slot" value="10-11">
+      <label for="Average">10 AM to 11 AM</label>
+      <input type="radio" id="slot3" name="slot" value="11-12">
+      <label for="Good">11 AM to 12 PM</label><br><br>
+    <input type="radio" id="slot4" name="slot" value="2-3">
+      <label for="Very Good">2 PM to 3 PM</label>
+    <input type="radio" id="slot5" name="slot" value="3-4">
+      <label for="Very Good">3 PM to 4 PM</label>
+    <input type="radio" id="slot6" name="slot" value="4-5">
+      <label for="Very Good">4 PM to 5 PM</label><br><br>
+
+
+    <button type="submit">Reschedule</button>
+</form>
+    <footer id="footer">
+        <hr>
+        <b>
+            <p class="align">Copyright &copy; 2020 WeCare. All Rights Reserved</p>
+        </b>
+    </footer>
+</body>
+
+</html>

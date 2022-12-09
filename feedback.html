@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WeCare</title>
+    <style>
+        .l_align {
+            text-align: right;
+        }
+
+        #footer {
+            position: static;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .align {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="images/logo.PNG" width="50">
+    <div class="l_align"> <a href="user_profile.html">View Profile</a>|
+        <a href="myappointments.html">My Appointments</a>|
+        <a href="">View Coaches</a>|
+        <a href="feedback.html">Feedback</a>|
+        <a href="contact_us.html">Contact Us</a>|
+        <a href="cancel.html">Logout</a>
+    </div>
+    <hr>
+    <h2>Feedback Form</h2>
+    <br><br>
+    <form action="feedback_success.html" method="get">
+        <label for="name"><b>Name</b></label><br>
+        <input type="text" required pattern="[A-Za-z]{3,50}"><br><br>
+
+        <label for="email"><b>Email</b></label><br>
+        <input type="email" placeholder="Ex david@gmail.com" required><br><br>
+
+        <label for="phone"><b>Phone Number</b></label><br>
+        <select name="phone" id="phone" required>
+            <option value="code">code</option>
+            <option value="213">+213</option>
+            <option value="91">+91</option>
+            <option value="244">+244</option>
+            <option value="61">+61</option>
+        </select>
+        <input type="tel" required pattern="[0-9]{10}"><br><br>
+
+        <label for="feedback"><b>Feedback Category</b></label><br>
+        <input list="feedbacks" required>
+        <datalist id="feedbacks">
+            <option value="Confidence Issues">
+            <option value="Depression Issues">
+            <option value="Overweight Issues">
+            <option value="Hypertension Issues">
+        </datalist><br><br>
+
+        <b>How do you rate your overall Experience?</b><br>
+          <input type="radio" id="poor" name="rate" value="Poor">
+          <label for="poor">Poor</label>
+          <input type="radio" id="Average" name="rate" value="Average">
+          <label for="Average">Average</label>
+          <input type="radio" id="Good" name="rate" value="Good">
+          <label for="Good">Good</label>
+        <input type="radio" id="Very Good" name="rate" value="Very Good" checked required>
+          <label for="Very Good">Very Good</label><br><br>
+
+        <label for="feed"><b>Feedback</b></label><br>
+        <textarea required maxlength="50"></textarea>
+        <br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    <footer id="footer">
+        <hr>
+        <b>
+            <p class="align">Copyright &copy; 2020 WeCare. All Rights Reserved</p>
+        </b>
+    </footer>
+</body>
+
+</html>
